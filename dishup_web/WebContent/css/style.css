@@ -1,0 +1,67 @@
+.clear { clear:both; }
+
+body { font-family:"Arial"; -webkit-font-smoothing:antialiased; }
+
+a { text-decoration:none; }
+
+a.gray-red { color:#666; }
+
+a.gray-red:hover { color:#F21800; }
+
+.middle { width:1090px; margin:0 auto; }
+
+.modal-default { position:absolute; display:none; z-index:9999; }
+
+#mask { background:url(../image/transp.png); width:100%; height:100%; position:fixed!important; position:absolute; z-index:9000; display:none; }
+
+#header { background: url(../image/bg-topo.png) repeat-x; height:147px; }
+
+#logo img { margin:15px 0 0 15px; width:180px; }
+
+#topo-cima { height:90px; border-bottom:1px dashed #D4D4D4; }
+
+#logo { float:left; }
+
+#busca { float:left; width:400px; border-left:1px dashed #D4D4D4; border-right:1px dashed #D4D4D4; height:40px; margin:49px 0 0 50px; }
+
+#busca h1 { float:left; margin:15px 0 0 15px; color:#D4D4D4; font-size:14px; font-style:italic; }
+
+#busca img { float:right; margin:15px 15px 0 0; }
+
+#login { float:left; width:90px; border-right:1px dashed #D4D4D4; height:40px; margin-top:49px; }
+
+#login h1 { float:left; margin:15px 0 0 15px; color:#D4D4D4; font-size:14px; font-style:italic; }
+
+#login img { float:right; margin:15px 15px 0 0; }
+
+#login-box { width:600px; height:390px; background-color:#FFF; }
+
+#login-titulo { background-color:#E5E5E5; height:28px; }
+
+#login-titulo h1 { float:left; color:#666; margin:7px 0 0 10px; font-size:14px; font-style:italic; }
+
+#login-titulo img { float:right; margin:7px 10px 0 0; }
+
+#login-conteudo { margin-top:13px; }
+
+#login-conteudo-esq { float:left; border-right:1px dashed #D4D4D4; width:300px; height:285px; }
+
+#login-conteudo-dir { float:right; width:299px; height:285px; }
+
+#login-conteudo h1 { color:#F21800; margin:5px 0 0 15px; }
+
+#login-conteudo small { color:#999; font-size:10px; }
+
+#login-conteudo-desc { margin:5px 0 0 15px; }
+
+.login-conteudo-bts { width:105px; margin:20px auto 0 auto; }
+
+.btn-login { color:#666; background-color:#E5E5E5; padding:7px; }
+
+#login-face { margin-top:12px; border-top:1px dashed #D4D4D4; height:50px; }
+
+#login-face img { margin:11px 0 0 10px; }
+
+fieldset.box-input { width:255px; height:37px; border:1px dashed #D4D4D4; padding:5px 10px; margin:10px auto 0 auto; }
+
+fieldset.box-input legend { color:#666; font-style:italic; font-size:14px; padding:0 10px; }

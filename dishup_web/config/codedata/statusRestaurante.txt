@@ -1,0 +1,4 @@
+1;Pendente de Ativacao;Restaurante pendente de ativacao por parte da equipe da Dish Up
+2;Ativo;Restaurante ativo e liberado para utilizacao dos servicos Dish Up
+3;Bloqueado;Restaurante bloqueado pela equipe da Dish Up
+4;Excluido;Restaurante excluido logicamente pela equipe da Dish Up ou pelo propriop usuario
