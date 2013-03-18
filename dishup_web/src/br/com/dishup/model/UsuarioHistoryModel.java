@@ -6,8 +6,8 @@ import br.com.dishup.codedata.EventoCD;
 import br.com.dishup.exception.DishUpException;
 import br.com.dishup.object.EventoVO;
 import br.com.dishup.object.UsuarioVO;
-import br.com.dishup.persistence.EventoDAO;
-import br.com.dishup.persistence.UsuarioHistoricoDAO;
+import br.com.dishup.persistence.hibernate.sql.EventoDAO;
+import br.com.dishup.persistence.hibernate.sql.UsuarioHistoricoDAO;
 
 public class UsuarioHistoryModel {
 	

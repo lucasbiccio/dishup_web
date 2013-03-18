@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="escolhaBean" scope="session" class="br.usp.experience.control.EscolhaController">
+		<property name="escolhaService" ref="escolhaService" />
+		<property name="servicoService" ref="servicoService" />
+	</bean>
+	
+	<bean id="escolhaService" class="br.usp.experience.service.impl.EscolhaServiceImpl">
+		<property name="escolhaDao" ref="escolhaDao" />
+	</bean>
+	
+
+	<bean id="canalDao" class="br.com.dishup.persistence.hibernate.HibernateCanalDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+</beans>

@@ -15,7 +15,7 @@ import br.com.dishup.exception.TableFieldNullValueException;
 import br.com.dishup.exception.TipoUsuarioAlreadyExistException;
 import br.com.dishup.object.TipoUsuarioVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.TipoUsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.TipoUsuarioDAO;
 import br.com.dishup.util.StatisticFile;
 import br.com.dishup.util.TipoUsuarioComparator;
 

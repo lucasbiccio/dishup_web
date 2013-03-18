@@ -1,23 +1,41 @@
 package br.com.dishup.object;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
 /*********************************
  * @author Lucas Biccio Ribeiro
  * @since 21/01/2013
  * @version 1.0 Class responsible for encapsulate the methods of Estado object (geographic organization)
  *********************************/
+
+@Entity
+@Table(name="estado")
 public class EstadoVO {
 
-	/***************************
-	*         ATRIBUTOS 
-	****************************/
+	@Id
+	@Column(name = "id_estado")
+	@SequenceGenerator(name = "id_estado", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_estado")
 	private int id;
-	private String sigla;
-	private String nome;
-	private PaisVO pais;
 	
-	/***************************
-	*       CONSTRUTORES 
-	****************************/
+	@Column(name="sigla_estado")
+	private String sigla;
+	
+	@Column(name="nm_estado")
+	private String nome;
+	
+	@OneToOne
+	@JoinColumn(name="id_pais")
+	private PaisVO pais;
+
 	public EstadoVO() {
 	}
 	
@@ -28,9 +46,6 @@ public class EstadoVO {
 		this.pais = pais;
 	}
 
-	/***************************
-	*       METODOS GET 
-	****************************/
 	public int getId() {
 		return id;
 	}
@@ -47,9 +62,6 @@ public class EstadoVO {
 		return pais;
 	}
 	
-	/***************************
-	*       METODOS OVERRIDE 
-	****************************/
 	@Override
 	public String toString() {
 		return "ESTADO: ID("+getId()+") SIGLA("+getSigla()+") NOME("+getNome()+") PAIS("+getPais().toString()+")";

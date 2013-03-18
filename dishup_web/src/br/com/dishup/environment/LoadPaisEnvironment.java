@@ -16,7 +16,7 @@ import br.com.dishup.exception.TableFieldNullValueException;
 import br.com.dishup.exception.TableFieldTruncationException;
 import br.com.dishup.object.PaisVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.PaisDAO;
+import br.com.dishup.persistence.hibernate.sql.PaisDAO;
 import br.com.dishup.util.PaisComparator;
 import br.com.dishup.util.StatisticFile;
 

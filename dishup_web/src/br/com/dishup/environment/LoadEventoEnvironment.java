@@ -10,7 +10,7 @@ import br.com.dishup.exception.EmptyTableException;
 import br.com.dishup.exception.FileEmptyException;
 import br.com.dishup.object.EventoVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.EventoDAO;
+import br.com.dishup.persistence.hibernate.sql.EventoDAO;
 import br.com.dishup.util.EventoComparator;
 import br.com.dishup.util.StatisticFile;
 

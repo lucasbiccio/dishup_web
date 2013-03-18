@@ -20,8 +20,8 @@ import br.com.dishup.exception.TableFieldTruncationException;
 import br.com.dishup.exception.TableForeignKeyViolationException;
 import br.com.dishup.object.EstadoVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.EstadoDAO;
-import br.com.dishup.persistence.PaisDAO;
+import br.com.dishup.persistence.hibernate.sql.EstadoDAO;
+import br.com.dishup.persistence.hibernate.sql.PaisDAO;
 import br.com.dishup.util.EstadoComparator;
 import br.com.dishup.util.StatisticFile;
 

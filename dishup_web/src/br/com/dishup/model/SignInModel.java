@@ -6,11 +6,11 @@ import br.com.dishup.exception.DishUpException;
 import br.com.dishup.exception.EncryptException;
 import br.com.dishup.exception.UsuarioNotFoundException;
 import br.com.dishup.object.UsuarioVO;
-import br.com.dishup.persistence.CanalDAO;
-import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.LogAutenticationDAO;
-import br.com.dishup.persistence.PasswordDAO;
-import br.com.dishup.persistence.UsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.CanalDAO;
+import br.com.dishup.persistence.hibernate.sql.ConnectionFactory;
+import br.com.dishup.persistence.hibernate.sql.LogAutenticationDAO;
+import br.com.dishup.persistence.hibernate.sql.PasswordDAO;
+import br.com.dishup.persistence.hibernate.sql.UsuarioDAO;
 import br.com.dishup.security.Cryptograph;
 
 /**************************

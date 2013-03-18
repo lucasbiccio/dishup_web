@@ -11,10 +11,10 @@ import br.com.dishup.object.StatusUsuarioVO;
 import br.com.dishup.object.TipoUsuarioVO;
 import br.com.dishup.object.UsuarioVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.PasswordDAO;
-import br.com.dishup.persistence.StatusUsuarioDAO;
-import br.com.dishup.persistence.TipoUsuarioDAO;
-import br.com.dishup.persistence.UsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.PasswordDAO;
+import br.com.dishup.persistence.hibernate.sql.StatusUsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.TipoUsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.UsuarioDAO;
 import br.com.dishup.security.Cryptograph;
 import br.com.dishup.util.FieldValidator;
 

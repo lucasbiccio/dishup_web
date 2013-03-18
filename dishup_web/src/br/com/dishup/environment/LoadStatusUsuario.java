@@ -15,7 +15,7 @@ import br.com.dishup.exception.TableFieldCheckException;
 import br.com.dishup.exception.TableFieldNullValueException;
 import br.com.dishup.object.StatusUsuarioVO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.StatusUsuarioDAO;
+import br.com.dishup.persistence.hibernate.sql.StatusUsuarioDAO;
 import br.com.dishup.util.StatisticFile;
 import br.com.dishup.util.StatusUsuarioComparator;
 

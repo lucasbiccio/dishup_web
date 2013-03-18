@@ -18,10 +18,10 @@ import br.com.dishup.exception.TableFieldNullValueException;
 import br.com.dishup.exception.TableFieldTruncationException;
 import br.com.dishup.exception.TableForeignKeyViolationException;
 import br.com.dishup.object.CidadeVO;
-import br.com.dishup.persistence.CidadeDAO;
+import br.com.dishup.persistence.hibernate.sql.CidadeDAO;
 import br.com.dishup.persistence.ConnectionFactory;
-import br.com.dishup.persistence.EstadoDAO;
-import br.com.dishup.persistence.PaisDAO;
+import br.com.dishup.persistence.hibernate.sql.EstadoDAO;
+import br.com.dishup.persistence.hibernate.sql.PaisDAO;
 import br.com.dishup.util.CidadeComparator;
 import br.com.dishup.util.StatisticFile;
 

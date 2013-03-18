@@ -5,11 +5,12 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+
 import br.com.dishup.exception.DishUpException;
 import br.com.dishup.exception.EmptyTableException;
 import br.com.dishup.exception.FileEmptyException;
 import br.com.dishup.object.CanalVO;
-import br.com.dishup.persistence.CanalDAO;
+import br.com.dishup.persistence.hibernate.sql.CanalDAO;
 import br.com.dishup.persistence.ConnectionFactory;
 import br.com.dishup.util.CanalComparator;
 import br.com.dishup.util.StatisticFile;

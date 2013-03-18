@@ -1,5 +1,6 @@
 package br.com.dishup.object;
 
+
 public class ConsumidorVO {
 	
 	private UsuarioVO usuario;
