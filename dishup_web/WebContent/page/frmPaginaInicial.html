@@ -4,10 +4,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<link type="text/css" rel="stylesheet" href="../css/reset.css" />
-		<link type="text/css" rel="stylesheet" href="../css/style.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="../javascript/functions.js"></script>
+		<link type="text/css" rel="stylesheet" href="../reset.css" />
+		<link type="text/css" rel="stylesheet" href="../style.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/functions.js"></script>
 		<title>Dishup</title>
 	</head>
 	<body>
@@ -17,28 +17,28 @@
 				<div id="topo-cima">
 					<div class="middle">
 						<div id="logo">
-							<img src="../image/logo.png" />
+							<a href="#"><img src="../images/logo.png" /></a>
 						</div>
 						<div id="busca">
-							<h1>Pesquise por restaurantes, pratos ou especialidades...</h1>
-							<a href="#"><img src="../image/bt-busca.png" /></a>
+							<input type="text" name="busca" value="Pesquise por restaurantes, pratos ou culinária...">
+							<a href="#"><img src="../images/bt-busca.png" /></a>
 						</div>
 						<div id="login">
 							<h1><a href="javascript:abrirModalDefault('.modal-default');" class="gray-red">Login</a></h1>
-							<a href="javascript:abrirModalDefault('.modal-default');"><img src="../image/bt-login.png" /></a>
+							<a href="javascript:abrirModalDefault('.modal-default');"><img src="../images/bt-login.png" /></a>
 						</div>
 						<div class="modal-default">
 							<div id="login-box">
 								<div id="login-titulo">
 									<h1>Faça login ou cadastre-se</h1>
-									<a href="javascript:fecharModalDefault('.modal-default');"><img src="../image/bt-xis.png" /></a>
+									<a href="javascript:fecharModalDefault('.modal-default');"><img src="../images/bt-xis.png" /></a>
 								</div>
 								<div id="login-conteudo">
 									<div id="login-conteudo-esq">
 										<h1>Já tenho cadastro</h1>
 										<form name="login-cadastro" action="#" method="post">
-											<fieldset class="box-input"><legend>E-mail</legend><input type="text" name="email"/></fieldset>
-											<fieldset class="box-input"><legend>Senha</legend><input type="password" name="senha"/></fieldset>
+											<fieldset class="box-input"><legend>E-mail</legend><input type="text" name="email"></fieldset>
+											<fieldset class="box-input"><legend>Senha</legend><input type="password" name="senha"></fieldset>
 											<div class="login-conteudo-bts"><a href="#" class="btn-login">CONTINUAR</a></div>
 										</form>
 									</div>
@@ -51,16 +51,16 @@
 											<small>* Ganhe descontos exclusivos</small>
 										</div>
 										<form name="login-cadastro" action="#" method="post">
-											<fieldset class="box-input"><legend>E-mail</legend><input type="text" name="email"/></fieldset>
-											<fieldset class="box-input"><legend>Confirmar e-mail</legend><input type="text" name="email_2"/></fieldset>
-											<fieldset class="box-input"><legend>Senha</legend><input type="password" name="senha"/></fieldset>
+											<fieldset class="box-input"><legend>E-mail</legend><input type="text" name="email"></fieldset>
+											<fieldset class="box-input"><legend>Confirmar e-mail</legend><input type="text" name="email_2"></fieldset>
+											<fieldset class="box-input"><legend>Senha</legend><input type="password" name="senha"></fieldset>
 											<div class="login-conteudo-bts"><a href="#" class="btn-login">CADASTRAR</a></div>
 										</form>
 									</div>
 								</div>
 								<div class="clear"></div>
 								<div id="login-face">
-									<a href="#"><img src="../image/btn-face.jpg" /></a>
+									<a href="#"><img src="../images/btn-face.jpg" /></a>
 								</div>
 							</div>
 						</div>
@@ -68,8 +68,13 @@
 				</div>
 				<div class="clear"></div>
 				<div id="topo-menu">
-
+					<div class="middle">
+						<fieldset class="box-menu localidade"><legend>Localidade</legend><p class="ativo"><a href="#">São Paulo</a></p><a href="#"><img src="../images/bt-seta-baixo.png" /></a></fieldset>
+						<fieldset class="box-menu regiao"><legend>Região</legend><p class="ativo"><a href="#">Vila Mariana</a></p><p class="ponto"> . </p><p class="ativo"><a href="#">Paulista</a></p><p class="ponto"> . </p><p class="ativo"><a href="#">Itaim</a></p><p class="ponto"> . </p><p class="inativo"><a href="#">Moema</a></p><a href="#"><img src="../images/bt-mais.png" /></a></fieldset>
+						<fieldset class="box-menu culinaria"><legend>Culinária</legend><p class="ativo"><a href="#">Japonesa</a></p><p class="ponto"> . </p><p class="inativo"><a href="#">Mexicana</a></p><a href="#"><img src="../images/bt-mais.png" /></a></fieldset>
+					</div>
 				</div>
+				<div class="clear"></div>
 				<div id="topo-banner">
 
 				</div>
