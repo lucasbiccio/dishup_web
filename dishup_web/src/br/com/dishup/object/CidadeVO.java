@@ -19,14 +19,10 @@ import javax.persistence.Table;
 @Table(name = "cidade")
 public class CidadeVO {
 
-	/***************************
-	 * ATRIBUTOS
-	 ****************************/
-	@Id
-	@Column(name = "id_cidade")
+	@Id @Column
 	@SequenceGenerator(name = "id_cidade", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_cidade")
-	private int id;
+	private Integer id;
 
 	@Column(name = "nm_cidade")
 	private String nome;
@@ -39,9 +35,6 @@ public class CidadeVO {
 	@JoinColumn(name = "id_pais")
 	private PaisVO pais;
 
-	/***************************
-	 * CONSTRUTORES
-	 ****************************/
 	public CidadeVO() {
 	}
 

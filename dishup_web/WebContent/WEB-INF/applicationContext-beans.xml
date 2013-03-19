@@ -5,17 +5,43 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="escolhaBean" scope="session" class="br.usp.experience.control.EscolhaController">
-		<property name="escolhaService" ref="escolhaService" />
-		<property name="servicoService" ref="servicoService" />
+	<bean id="canalDao" class="br.com.dishup.persistence.hibernate.HibernateCanalDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
-	<bean id="escolhaService" class="br.usp.experience.service.impl.EscolhaServiceImpl">
-		<property name="escolhaDao" ref="escolhaDao" />
+	<bean id="cidadeDao" class="br.com.dishup.persistence.hibernate.HibernateCidadeDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
-
-	<bean id="canalDao" class="br.com.dishup.persistence.hibernate.HibernateCanalDao">
+	<bean id="estadoDao" class="br.com.dishup.persistence.hibernate.HibernateEstadoDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="eventoDao" class="br.com.dishup.persistence.hibernate.HibernateEventoDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="paisDao" class="br.com.dishup.persistence.hibernate.HibernatePaisDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="passwordDao" class="br.com.dishup.persistence.hibernate.HibernatePasswordDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="statusUsuarioDao" class="br.com.dishup.persistence.hibernate.HibernateStatusUsuarioDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="tipoUsuarioDao" class="br.com.dishup.persistence.hibernate.HibernateTipoUsuarioDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="usuarioDao" class="br.com.dishup.persistence.hibernate.HibernateUsuarioDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="usuarioHistoricoDao" class="br.com.dishup.persistence.hibernate.HibernateUsuarioHistoricoDAO">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 

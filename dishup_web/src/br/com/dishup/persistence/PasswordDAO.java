@@ -13,11 +13,7 @@ import br.com.dishup.object.PasswordVO;
 
 public interface PasswordDAO {
 
-	public void insert(Connection connection, PasswordVO password)
-			throws DatabaseException, AutenticationAlreadyExistException,
-			TableFieldNullValueException, TableFieldCheckException,
-			TableForeignKeyViolationException, TableFieldTruncationException;
+	public void insert(PasswordVO password);
 
-	public PasswordVO selectById(Connection connection, int id)
-			throws DatabaseException, EncryptException;
+	public PasswordVO selectById(int id);
 }

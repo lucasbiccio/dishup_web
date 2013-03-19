@@ -55,7 +55,7 @@ public class UsuarioVO {
 		this.email = email;
 		this.tipoUsuario = tipoUsuario;
 		this.statusUsuario = statusUsuario;
-		this.dataInclusao = dataInclusao;
+		this.setDataInclusao(dataInclusao);
 		this.dataUltimaAlteracao = dataUltimaAlteracao;
 		this.dataUltimaAlteracaoSenha = dataUltimaAlteracaoSenha;
 		this.flagSolicitacaoAlteracaoSenha = flagSolicitacaoAlteracaoSenha;
@@ -69,7 +69,7 @@ public class UsuarioVO {
 		this.email = email;
 		this.tipoUsuario = tipoUsuario;
 		this.statusUsuario = statusUsuario;
-		this.dataInclusao = dataInclusao;
+		this.setDataInclusao(dataInclusao);
 		this.dataUltimaAlteracao = dataUltimaAlteracao;
 		this.dataUltimaAlteracaoSenha = dataUltimaAlteracaoSenha;
 		this.flagSolicitacaoAlteracaoSenha = flagSolicitacaoAlteracaoSenha;
@@ -110,7 +110,11 @@ public class UsuarioVO {
 	@Override
 	public String toString() {
 		return "USUARIO: ID("+id+") EMAIL("+email+") TIPO USUARIO:("+tipoUsuario.toString()+") STATUS USUARIO: " +
-				"("+statusUsuario.toString()+") DATA INCLUSAO("+dataInclusao+") DATA ULTIMA ALTERACAO("+dataUltimaAlteracao+") " +
+				"("+statusUsuario.toString()+") DATA INCLUSAO("+getDataInclusao()+") DATA ULTIMA ALTERACAO("+dataUltimaAlteracao+") " +
 				"DATA ULTIMA ALTERACAO SENHA("+dataUltimaAlteracaoSenha+") FLAG SOLICITACAO ALTERACAO SENHA("+flagSolicitacaoAlteracaoSenha+")";
+	}
+
+	public void setDataInclusao(String dataInclusao) {
+		this.dataInclusao = dataInclusao;
 	}
 }

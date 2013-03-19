@@ -6,19 +6,17 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.sql.Types;
 
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 import br.com.dishup.exception.DatabaseException;
 import br.com.dishup.exception.TableFieldCheckException;
 import br.com.dishup.exception.TableFieldNullValueException;
 import br.com.dishup.object.EventoVO;
 import br.com.dishup.object.UsuarioVO;
+import br.com.dishup.persistence.UsuarioHistoricoDAO;
 
-public class HibernateUsuarioHistoricoDAO {
-	
-	/**********************************************
-	 * SQL STATE CODE - POSTGRES - doc: http://www.postgresql.org/docs/8.3/static/errcodes-appendix.html
-	 **********************************************/
-	private final String SQLSTATE_CODE_23514 = "23514";//Check Violation
-	private final String SQLSTATE_CODE_23502 = "23502";//Not Null Violation
+// TODO ARRUMAR
+public class HibernateUsuarioHistoricoDAO extends HibernateDaoSupport implements UsuarioHistoricoDAO{
 	
 	public void insert(Connection connection, UsuarioVO usuarioVO, EventoVO eventoVO) throws DatabaseException, TableFieldCheckException, TableFieldNullValueException{
 		String sql = "INSERT INTO usuario_historico (id_usuario, dt_historico, email_usuario, id_tipo_usuario, id_status_usuario, dt_inclusao_usuario, dt_ultima_alteracao_usuario," +
@@ -47,11 +45,6 @@ public class HibernateUsuarioHistoricoDAO {
 			stmt.setInt(9, eventoVO.getId());
 			stmt.execute();
 		}catch(SQLException e){
-			if(e.getSQLState().equals(SQLSTATE_CODE_23514))
-				throw new TableFieldCheckException("Erro na validacao dos campos para insercao (CHECK) - Usuario: "+usuarioVO.toString());
-			else if(e.getSQLState().equals(SQLSTATE_CODE_23502))
-				throw new TableFieldNullValueException("Algum campo NULO esta sendo inserido em um campo que n‹o aceita nulo - Usuario: "+usuarioVO.toString());
-			else
 				throw new DatabaseException("TABLE: usuario_historico SQLCODE: "+e.getErrorCode()+" SQLSTATE: "+e.getSQLState()+" SQLMESSAGE:"+e.getMessage());
 		}
 	}

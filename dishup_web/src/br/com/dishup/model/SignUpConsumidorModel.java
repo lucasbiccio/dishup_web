@@ -15,7 +15,6 @@ import br.com.dishup.persistence.hibernate.sql.PasswordDAO;
 import br.com.dishup.persistence.hibernate.sql.StatusUsuarioDAO;
 import br.com.dishup.persistence.hibernate.sql.TipoUsuarioDAO;
 import br.com.dishup.persistence.hibernate.sql.UsuarioDAO;
-import br.com.dishup.security.Cryptograph;
 import br.com.dishup.util.FieldValidator;
 
 public class SignUpConsumidorModel {
@@ -64,7 +63,7 @@ public class SignUpConsumidorModel {
 						"AVISO: USUARIO JA CADASTRADO NO SISTEMA", new UsuarioAlreadyExistException("AVISO: USUARIO JA CADASTRADO NO SISTEMA"));
 			//gerando e inserindo a assinatura do usuario
 			PasswordDAO passwordDAO = new PasswordDAO();
-			PasswordVO signture = new PasswordVO(usuario.getId(), Cryptograph.encrypt(password));
+			PasswordVO signture = new PasswordVO();
 			passwordDAO.insert(connectionFactory.getConnection(),signture);
 			//gerando o historico do usuario
 			UsuarioHistoryModel usuarioHistoryModel = new UsuarioHistoryModel();

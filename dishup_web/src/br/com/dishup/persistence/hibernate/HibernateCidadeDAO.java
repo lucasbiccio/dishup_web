@@ -18,7 +18,7 @@ public class HibernateCidadeDAO extends HibernateDaoSupport implements CidadeDAO
 	}
 	
 	public CidadeVO selectById(int id){
-		String sql = "SELECT cidade FROM Cidade cidade WHERE id_cidade = \"" + id + "\"";
+		String sql = "SELECT cidade FROM Cidade cidade WHERE id_cidade = " + id;
 		CidadeVO cidade = (CidadeVO) getHibernateTemplate().find(sql);
 		return cidade;
 	}

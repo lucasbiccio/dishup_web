@@ -19,11 +19,15 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>br.usp.experience.model.PizzariaVO</value>
-				<value>br.usp.experience.model.Users</value>
-				<value>br.usp.experience.model.PreferenceVO</value>
-				<value>br.usp.laboratory.object.ConsumerVO</value>
-				
+				<value>br.com.dishup.object.CanalVO</value>
+				<value>br.com.dishup.object.CidadeVO</value>
+				<value>br.com.dishup.object.ConsumidorVO</value>
+				<value>br.com.dishup.object.EstadoVO</value>
+				<value>br.com.dishup.object.EventoVO</value>
+				<value>br.com.dishup.object.PaisVO</value>
+				<value>br.com.dishup.object.StatusUsuarioVO</value>
+				<value>br.com.dishup.object.TipoUsuarioVO</value>
+				<value>br.com.dishup.object.UsuarioVO</value>
 			</list>
 		</property>
 	</bean>

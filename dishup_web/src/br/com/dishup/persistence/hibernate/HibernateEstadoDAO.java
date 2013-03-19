@@ -25,7 +25,7 @@ public class HibernateEstadoDAO extends HibernateDaoSupport implements EstadoDAO
 	}
 	
 	public EstadoVO selectById(int id) {
-		String sql = "SELECT estado FROM EstadoVO estado WHERE id = \"" + id + "\"";
+		String sql = "SELECT estado FROM EstadoVO estado WHERE id = " + id;
 		EstadoVO estado = (EstadoVO) getHibernateTemplate().find(sql);
 		return estado;
 	}

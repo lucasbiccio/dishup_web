@@ -1,1 +1,1 @@
-<% response.sendRedirect("page/frmPaginaInicial.html");%>
+<% response.sendRedirect("pages/frmPaginaInicial.html");%>

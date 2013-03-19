@@ -19,7 +19,7 @@ public class HibernateCanalDAO extends HibernateDaoSupport implements CanalDAO {
 	}
 
 	public CanalVO selectById(int id){
-		CanalVO canalVO = (CanalVO) getHibernateTemplate().find("SELECT canal FROM Canal canal WHERE id = \"" + id + "\"");
+		CanalVO canalVO = (CanalVO) getHibernateTemplate().find("SELECT canal FROM Canal canal WHERE id =" + id);
 		return canalVO;
 	}
 

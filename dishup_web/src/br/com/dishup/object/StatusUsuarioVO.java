@@ -22,7 +22,7 @@ public class StatusUsuarioVO {
 	@Id
 	@Column(name = "id_status_usuario")
 	@SequenceGenerator(name = "id_status_usuario", allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_cidade")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_status_usuario")
 	private int idStatusUsuario;
 	
 	@Column(name="nm_status_usuario")
