@@ -1,0 +1,57 @@
+.navbar-inner {
+	border-radius: 0;
+}
+
+.navbar .nav > li {
+	line-height: 33px;
+}
+
+.navbar .nav > li a {
+	color: #000;
+}
+
+.navbar .nav > li {
+	line-height: 33px;
+	font-size: 16px;
+}
+
+.box-adm {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.box-login {
+	border: 1px solid #d4d4d4;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+	width: 100px;
+	margin-left: 29px;
+}
+
+.form-horizontal .controls {
+	margin-left: 130px;	
+}
+
+span.help-block a {
+	font-size: 12px;
+	line-height: 10px;
+}
+
+.a-gray {
+	color: #999;	
+}
+
+.a-gray:hover {
+	color: #666;
+	text-decoration: underline;	
+}
+
+.box-adm legend {
+	background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+	background-repeat: repeat-x;
+	border-radius: 4px 4px 0 0;
+}
