@@ -14,6 +14,27 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	line-height: 33px;
 }
 
+.navbar .nav li.dropdown>.dropdown-toggle .caret {
+	margin-top: 14px;
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle .caret, .navbar .nav li.dropdown.active>.dropdown-toggle .caret, .navbar .nav li.dropdown.open.active>.dropdown-toggle .caret {
+	border-top-color: #da4f49;
+	border-bottom-color: #da4f49;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+	color: #da4f49;
+	*background-color: #da4f49;
+}
+
+.nav .dropdown-toggle:hover .caret {
+	border-top-color: #da4f49 !important;
+  	border-bottom-color: #da4f49 !important;
+}
+
 .navbar .nav > li a {
 	color: #000;
 }
@@ -25,6 +46,19 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .navbar .nav > li {
 	line-height: 33px;
 	font-size: 14px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+ 	background-color: #e5e5e5;
+	background-image: -moz-linear-gradient(top, #e5e5e5, #e5e5e5);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e5e5), to(#e5e5e5));
+  	background-image: -webkit-linear-gradient(top, #e5e5e5, #e5e5e5);
+  	background-image: -o-linear-gradient(top, #e5e5e5, #e5e5e5);
+  	background-image: linear-gradient(to bottom, #e5e5e5, #e5e5e5);
+  	background-repeat: repeat-x;
 }
 
 .box-adm {
@@ -66,4 +100,66 @@ span.help-block a {
 	background-image: linear-gradient(to bottom,#fff,#f2f2f2);
 	background-repeat: repeat-x;
 	border-radius: 4px 4px 0 0;
+}
+
+body, h1, h2, h3, h4 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+table.table-rest {
+	margin-top: 20px;
+}
+
+table.table-rest .btn-edit {
+	margin-right: 5px;
+}
+
+table.table-rest td {
+	line-height: 23px;
+}
+
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+	color: #da4f49;
+}
+
+.nav-tabs a {
+	color: #666;
+}
+
+.nav-tabs a:hover {
+	color: #da4f49;
+}
+
+ul.breadcrumb a {
+	color: #da4f49;
+}
+
+select.select-copy {
+	margin-bottom: 20px;
+}
+
+.first-el-form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.control-adm label {
+	margin-left: 8px !important;
+}
+
+.box-sing-rest {
+	padding: 0 20px;
+	border: 1px solid #d4d4d4;
+    border-radius: 6px 6px 6px 6px;
+    margin-bottom: 20px;
+}
+
+select.first-select {
+	margin-right: 10px;
 }
