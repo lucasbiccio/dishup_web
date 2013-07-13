@@ -41,15 +41,18 @@
       			<div class="tabbable tabs-left">
 					<ul class="nav nav-tabs">
 				    	<li class="active"><a href="#tab1" data-toggle="tab">Restaurantes</a></li>
-    					<li><a href="#tab2" data-toggle="tab">Cardápios</a></li>
-    					<li><a href="#tab3" data-toggle="tab">Vouchers</a></li>
+    					<li><a href="#tab2" data-toggle="tab">Vouchers</a></li>
 				  	</ul>
 				  	<div class="tab-content">
 				    	<div class="tab-pane active" id="tab1">
-				    		<h3>Novo restaurante</h3>
-					    	<ul class="breadcrumb">
+				    		<ul class="breadcrumb">
 								<li><a href="#">Gerenciar restaurantes</a> <span class="divider">/</span></li>
 								<li class="active">Novo restaurante</li>
+							</ul>
+					  		<ul class="nav nav-pills">
+								<li><a href="#">Informações gerais</a></li>
+							  	<li class="active"><a href="#">Dados básicos</a></li>
+							  	<li><a href="#">Imagens</a></li>
 							</ul>
 					    	<form class="form-horizontal">
 					    		<select class="select-copy">
@@ -59,7 +62,8 @@
 								  	<option>Restaurante Nome Três</option>
 								</select><br />
 								<div class="box-sing-rest">
-									<select class="select-copy first-el-form">
+									<fieldset class="form-in-title"><legend>&nbsp;&nbsp;Dados básicos do restaurante</legend></fieldset>
+									<select class="select-copy first-el-form select-adm">
 										<option>É filial de...</option>
 									  	<option>Restaurante Nome Um</option>
 									  	<option>Restaurante Nome Dois</option>
@@ -83,20 +87,9 @@
 									    	<input type="text" id="inputNomeFantasia" class="input-xlarge" placeholder="">
 									    </div>
 									</div>
-									<div class="control-group control-adm">
-										<label class="control-label" for="inputNomeFantasia">E-mail</label>
-									    <div class="controls">
-									    	<input type="text" id="inputNomeFantasia" class="input-xlarge" placeholder="">
-									    </div>
-									</div>
-									<div class="control-group control-adm">
-										<label class="control-label" for="inputNomeFantasia">Site</label>
-									    <div class="controls">
-									    	<input type="text" id="inputNomeFantasia" class="input-xlarge" placeholder="">
-									    </div>
-									</div>
 								</div>
 								<div class="box-sing-rest">
+									<fieldset class="form-in-title"><legend>&nbsp;&nbsp;Endereço do restaurante</legend></fieldset>
 									<div class="control-group control-adm first-el-form">
 										<label class="control-label" for="inputNomeFantasia">CEP</label>
 									    <div class="controls">
@@ -127,7 +120,7 @@
 									    	<input type="text" id="inputNomeFantasia" class="input-large" placeholder="">
 									    </div>
 									</div>
-									<select class="select-copy span1 first-select">
+									<select class="select-copy span1 first-select select-adm">
 										<option>UF</option>
 									  	<option>SP</option>
 									  	<option>RJ</option>
@@ -141,25 +134,71 @@
 									</select>
 								</div>
 								<div class="box-sing-rest">
+									<fieldset class="form-in-title"><legend>&nbsp;&nbsp;Contato do restaurante</legend></fieldset>
 									<div class="control-group control-adm first-el-form">
-										<label class="control-label" for="inputNomeFantasia">CEP</label>
+										<label class="control-label" for="inputNomeFantasia">Telefone</label>
 									    <div class="controls">
-									    	<input type="text" id="inputNomeFantasia" class="input-small" placeholder="">
+									    	<input type="text" id="inputNomeFantasia" class="input-large" placeholder="">
 									    </div>
 									</div>
 									<div class="control-group control-adm">
-										<label class="control-label" for="inputNomeFantasia">Endereço</label>
+										<label class="control-label" for="inputNomeFantasia">Site</label>
 									    <div class="controls">
 									    	<input type="text" id="inputNomeFantasia" class="input-xlarge" placeholder="">
 									    </div>
 									</div>
 								</div>
+								<div class="box-sing-rest">
+									<fieldset class="form-in-title"><legend>&nbsp;&nbsp;Responsável ou pessoa de contato do restaurante</legend></fieldset>
+									<div class="control-group control-adm first-el-form">
+										<label class="control-label" for="inputNomeFantasia">Nome</label>
+									    <div class="controls">
+									    	<input type="text" id="inputNomeFantasia" class="input-xxlarge" placeholder="">
+									    </div>
+									</div>
+									<div class="control-group control-adm">
+										<label class="control-label" for="inputNomeFantasia">CPF</label>
+										<div class="controls">
+									    	<input type="text" id="inputNomeFantasia" class="input-large" placeholder="">
+									    </div>
+									</div>
+									<div class="control-group control-adm">
+										<label class="control-label" for="inputNomeFantasia">Telefone</label>
+									    <div class="controls">
+									    	<input type="text" id="inputNomeFantasia" class="input-large" placeholder="">
+									    </div>
+									</div>
+									<select class="select-copy select-adm">
+										<option>Cargo</option>
+									  	<option>Cozinheiro</option>
+									  	<option>Garçom</option>
+									</select>
+								</div>
+								<div class="box-sing-rest">
+									<fieldset class="form-in-title"><legend>&nbsp;&nbsp;Conta do restaurante</legend></fieldset>
+									<div class="control-group control-adm first-el-form">
+										<label class="control-label" for="inputNomeFantasia">E-mail</label>
+									    <div class="controls">
+									    	<input type="text" id="inputNomeFantasia" class="input-xlarge" placeholder="">
+									    </div>
+									</div>
+									<div class="control-group control-adm">
+										<label class="control-label" for="inputNomeFantasia">Senha</label>
+										<div class="controls">
+									    	<input type="password" id="inputNomeFantasia" class="input-small" placeholder="">
+									    </div>
+									</div>
+									<div class="control-group control-adm">
+										<label class="control-label" for="inputNomeFantasia">Confirmar senha</label>
+										<div class="controls">
+									    	<input type="password" id="inputNomeFantasia" class="input-small" placeholder="">
+									    </div>
+									</div>
+								</div>
+								<div class="btn-form"><button class="btn btn-danger" type="button">Salvar</button></div>
 					    	</form>
 					    </div>
 					    <div class="tab-pane" id="tab2">
-					    	<p>cardapios</p>
-					    </div>
-					    <div class="tab-pane" id="tab3">
 					    	<p>vouchers</p>
 					    </div>
 				  	</div>

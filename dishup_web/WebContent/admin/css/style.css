@@ -6,6 +6,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	outline: 0 none;
 }
 
+a.link-d:hover {
+	color: #999;
+}
+
+a.link-d {
+	color: #da4f49;
+}
+
 .navbar-inner {
 	border-radius: 0;
 }
@@ -74,8 +82,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 .form-horizontal .control-label {
 	text-align: left;
-	width: 100px;
+	width: 120px;
 	margin-left: 29px;
+}
+
+.control-label.large {
+	width: 180px;
 }
 
 .form-horizontal .controls {
@@ -149,12 +161,20 @@ select.select-copy {
 	margin-bottom: 20px;
 }
 
+.control-adm {
+	padding: 0 20px;
+}
+
+.select-adm {
+	margin-left: 26px !important;
+}
+
 .control-adm label {
 	margin-left: 8px !important;
 }
 
 .box-sing-rest {
-	padding: 0 20px;
+	padding: 0;
 	border: 1px solid #d4d4d4;
     border-radius: 6px 6px 6px 6px;
     margin-bottom: 20px;
@@ -162,4 +182,43 @@ select.select-copy {
 
 select.first-select {
 	margin-right: 10px;
+}
+
+fieldset.form-in-title {
+	height: 40px;
+}
+
+fieldset.form-in-title legend {
+	font-size: 14px;
+	height: 40px;
+}
+
+.nav-pills li {
+	margin-right: 10px;
+}
+
+.nav-pills li a {
+	color: #da4f49;
+}
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+	background-color: #da4f49;
+}
+
+.btn-form {
+	width: 66px;
+	margin: 0 auto;
+}
+
+.img-profile {
+	width: 140px;
+	height: 160px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.bottom-image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
